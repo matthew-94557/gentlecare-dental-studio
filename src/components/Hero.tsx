@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Calendar, Shield, Cpu, Users, ArrowRight, Star } from 'lucide-react';
+import heroImgSrc from "../assets/images/hero_patient_smile_1779979571341.png";
 
 interface HeroProps {
   onBookClick: () => void;
@@ -127,7 +128,7 @@ export default function Hero({ onBookClick }: HeroProps) {
               {/* Main portrait wrapper */}
               <div className="relative aspect-[4/3] lg:aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src="/src/assets/images/hero_patient_smile_1779979571341.png"
+                  src={heroImgSrc}
                   alt="Beautiful healthy smile patient at GentleCare Dental Studio"
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"
