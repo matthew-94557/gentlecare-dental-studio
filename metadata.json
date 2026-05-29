@@ -1,0 +1,6 @@
+{
+  "name": "GentleCare Dental Studio",
+  "description": "Recreation of a premium, dental landing page containing virtual appointment consultation bookings, interactive testimonials, before & after visuals, and extensive clinic details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
