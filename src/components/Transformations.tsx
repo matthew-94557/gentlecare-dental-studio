@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 import { TestimonialItem } from '../types';
+import transformationsImgSrc from "../assets/images/teeth_transform_1779979646140.png";
+
 
 export default function Transformations() {
   const [sliderVal, setSliderVal] = useState<number>(50);
@@ -142,7 +144,7 @@ export default function Transformations() {
               {/* BEFORE LAYER (Fully visible on drag, styled with realistic dental tint) */}
               <div className="absolute inset-0 w-full h-full">
                 <img
-                  src="/src/assets/images/teeth_transform_1779979646140.png"
+                  src={transformationsImgSrc}
                   alt="Standard teeth status"
                   className="w-full h-full object-cover filter saturate-40 sepia-30 brightness-95"
                   referrerPolicy="no-referrer"
@@ -161,7 +163,7 @@ export default function Transformations() {
                 }}
               >
                 <img
-                  src="/src/assets/images/teeth_transform_1779979646140.png"
+                  src={transformationsImgSrc}
                   alt="After GentleCare Dental Whitening Treatment"
                   className="w-full h-full object-cover filter saturate-105 contrast-102 brightness-103"
                   referrerPolicy="no-referrer"
