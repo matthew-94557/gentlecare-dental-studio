@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Shield, Sparkles, HeartIcon, BadgeDollarSign, Award, Star } from 'lucide-react';
+import whyChooseUsImgSrc1 from "../assets/images/clinic_dentist_1779979598668.png";
+import whyChooseUsImgSrc2 from "../assets/images/clinic_reception_1779979622326.png";
 
 export default function WhyChooseUs() {
   const values = [
@@ -55,7 +57,7 @@ export default function WhyChooseUs() {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-5">
                 {/* Dentist Image */}
                 <img
-                  src="/src/assets/images/clinic_dentist_1779979598668.png"
+                  src={whyChooseUsImgSrc1}
                   alt="Board-certified dentist Dr. James Vance DDS"
                   className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -118,7 +120,7 @@ export default function WhyChooseUs() {
             <div className="relative group rounded-3xl overflow-hidden shadow-xl border border-slate-150 aspect-[4/3] lg:aspect-square flex flex-col justify-end bg-slate-900">
               {/* Clinic Reception Image */}
               <img
-                src="/src/assets/images/clinic_reception_1779979622326.png"
+                src={whyChooseUsImgSrc2}
                 alt="GentleCare Dental Studio reception lounge"
                 className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-103 transition-transform duration-500"
                 referrerPolicy="no-referrer"
